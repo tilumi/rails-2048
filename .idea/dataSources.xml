@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2528358462">
+    <data-source source="LOCAL" name="Rails rails-2048: development" uuid="f1c779db-4a80-4430-9cac-5a9246584d28">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/rails_2048_development</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails rails-2048: test" uuid="fee34e41-000b-4c8d-a296-b0829cfb7e27">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/rails-2048_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails rails-2048: production" uuid="31aa04c1-2b0a-4993-931f-bb7d0a8cf561">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/rails-2048_production</jdbc-url>
+      <user-name>rails-2048</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff8dfebdfe3dfe6dff9df87df98df9adf9edf92dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

@@ -1,0 +1,52 @@
+<%=@message%>
+<table >
+<% @board.each do |line| %>
+      <tr>
+    <% line.each do |element|%>
+        <td style="text-align: center; border: 1px solid black; width: 30px; height: 30px;">
+          <%if element > 0%>
+          <%=element%>
+          <%end%>
+        </td>
+    <% end %>
+      </tr>
+<% end %>
+</table>
+<!--<table style="text-align: center; text-decoration: underline; font-size: 150%;">-->
+  <!--<tr>-->
+    <!--<td></td>-->
+    <!--<td><%=link_to "w", :controller => "welcome", :action => "index" , :dir => 'w' , :board => @board.to_json.html_safe%></td>-->
+    <!--<td></td>-->
+  <!--</tr>-->
+  <!--<tr>-->
+    <!--<td><%=link_to "a", :controller => "welcome", :action => "index" , :dir => 'a' , :board => @board.to_json.html_safe%></td>-->
+    <!--<td><%=link_to "s", :controller => "welcome", :action => "index" , :dir => 's' , :board => @board.to_json.html_safe%></td>-->
+    <!--<td><%=link_to "d", :controller => "welcome", :action => "index" , :dir => 'd' , :board => @board.to_json.html_safe%></td>-->
+  <!--</tr>-->
+<!--</table>-->
+<script>
+    document.onkeypress = function(e) {
+        console.log(e)
+        e = e || window.event;
+        var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+        if (charCode) {
+            var cmd = String.fromCharCode(charCode)
+            console.log(cmd)
+            if( cmd == 'w'){
+                window.location.href = '<%="#{root_path}?dir=w&board=#{@board.to_json}".html_safe%>';
+            }
+            if( cmd == 's'){
+                window.location.href = '<%="#{root_path}?dir=s&board=#{@board.to_json}".html_safe%>';
+            }
+            if( cmd == 'a'){
+                window.location.href = '<%="#{root_path}?dir=a&board=#{@board.to_json}".html_safe%>';
+            }
+            if( cmd == 'd'){
+                window.location.href = '<%="#{root_path}?dir=d&board=#{@board.to_json}".html_safe%>';
+            }
+
+        }
+    };
+</script>
+
+
