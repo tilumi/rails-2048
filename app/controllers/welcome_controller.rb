@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  include Game2048
+  
 
   def index
     size = 10
